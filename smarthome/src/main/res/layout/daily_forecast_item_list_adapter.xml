@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/weather_everyday_bg"
+    android:layout_margin="1dp">
+
+    <ImageView
+        android:id="@+id/weather_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/weather_sunny_clear"
+        />
+    <TextView
+        android:id="@+id/weekday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/weather_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:text="星期四"
+        android:textColor="@color/grown_black"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/min_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="最低 -4"
+        android:textColor="@color/grown_black"
+        android:textSize="10sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/max_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/min_temp"
+        android:layout_centerVertical="true"
+        android:text="最高 7"
+        android:textColor="@color/grown_black"
+        android:textSize="10sp"
+        android:textStyle="bold"/>
+
+
+
+</RelativeLayout>

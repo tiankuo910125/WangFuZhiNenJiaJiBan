@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="VerticalSeekBar">
+        <attr name="seekBarRotation">
+
+            <!-- Clock wise - 90 deg; top = min, bottom = max -->
+            <enum name="CW90" value="90" />
+            <!-- Clock wise - 270 deg; bottom = min, top = max -->
+            <enum name="CW270" value="270" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircularProgress">
+    </declare-styleable>
+
+    <declare-styleable name="SmartImageView">
+        <attr name="onLoading" format="reference" />
+        <attr name="onFail" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleSeekbar">
+        <attr name="arc_sb_radius" format="dimension" />
+        <attr name="arc_sb_maxY" format="dimension" />
+        <attr name="arc_sb_centre_X" format="dimension" />
+        <attr name="arc_sb_centre_Y" format="dimension" />
+        <attr name="arc_sb_min_value" format="integer" />
+        <attr name="arc_sb_max_value" format="integer" />
+        <attr name="arc_sb_init_value" format="integer" />
+        <attr name="exampleString" format="string" />
+        <attr name="exampleDimension" format="dimension" />
+        <attr name="exampleColor" format="color" />
+        <attr name="exampleDrawable" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressView">
+        <attr name="maxValue" format="integer" />
+        <attr name="minValue" format="integer" />
+        <attr name="initValue" format="integer" />
+        <attr name="circleProgressViewInside" format="color|reference" />
+        <attr name="circleProgressViewArrow" format="color|reference" />
+        <attr name="circleProgressViewOutside" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleSeekButton">
+        <attr name="button_maxValue" format="integer" />
+        <attr name="button_minValue" format="integer" />
+        <attr name="button_initValue" format="integer" />
+        <attr name="circleButtonInside" format="color|reference" />
+        <attr name="circleButtonArrow" format="color|reference" />
+        <attr name="circleButtonOutside" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgress">
+        <attr name="forColor" format="color|reference" />
+        <attr name="bacColor" format="color|reference" />
+        <attr name="startAngle" format="float">
+            <enum name="normal" value="160" />
+        </attr>
+        <attr name="sweepAngle" format="float" />
+        <attr name="progress" format="integer" />
+        <attr name="fontSize" format="dimension|reference" />
+        <attr name="circle_width" format="dimension" />
+        <attr name="circle_height" format="dimension" />
+        <attr name="title_text" format="string"/>
+        <attr name="value_text" format="string"/>
+    </declare-styleable>
+
+    <color name="forColor">#00af64</color>
+    <color name="bacColor">#aaaa</color>
+    <dimen name="strokeWidth">10dp</dimen>
+    <dimen name="fontSize">25dp</dimen>
+</resources>

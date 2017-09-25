@@ -1,0 +1,313 @@
+<resources>
+    <string name="app_name">王府智能</string>
+
+    <string name="navigation_drawer_open">打开滑动菜单</string>
+    <string name="navigation_drawer_close">关闭滑动菜单</string>
+
+    <string name="welcome_morning">早上好！</string>
+    <string name="welcome_afternoon">下午好！</string>
+    <string name="welcome_night">晚上好！</string>
+
+    <string name="action_control">控制设置</string>
+    <string name="action_alert_record">报警记录</string>
+    <string name="action_system_log">工作日志</string>
+    <string name="action_user">用户中心</string>
+    <string name="action_feedback">建议反馈</string>
+    <string name="action_message_center">历史消息</string>
+    <string name="action_house_management">住宅管理</string>
+    <string name="action_house_status">查看房屋</string>
+
+    <string name="widget_environment_title">健康环境</string>
+    <string name="widget_security_title">安全管控</string>
+
+    <string name="user_center_activity_title">个人中心</string>
+    <string name="user_center_switch_account_button">切换账号</string>
+    <string name="user_center_quit_account_button">退出账号</string>
+    <string name="user_center_list_group_segmentation_1">锁屏密码</string>
+    <string name="user_center_list_group_segmentation_2"> </string>
+
+    <string name="user_center_list_group1_item1">家庭成员管理</string>
+
+    <string name="user_center_list_group2_item1_open">启用锁屏密码</string>
+    <string name="user_center_list_group2_item1_cLose">关闭锁屏密码</string>
+    <string name="user_center_list_group2_item2">更改锁屏密码</string>
+
+    <string name="user_center_list_group3_item1">关于我们</string>
+    <string name="user_center_list_group3_item2">意见反馈</string>
+
+    <string name="device_management_activity_title">设备列表</string>
+    <string name="device_management_device_state_ok">运行正常</string>
+    <string name="device_management_device_state_error">设备掉线</string>
+    <string name="device_management_device_waiting_added">待添加</string>
+    <string name="device_management_no_device_waiting_added">目前没有可添加设备</string>
+
+    <string name="device_detail_type">类型</string>
+    <string name="device_detail_factory">厂家</string>
+    <string name="device_detail_model">型号</string>
+    <string name="device_detail_date">生产日期</string>
+    <string name="device_detail_consumables">耗材更换</string>
+    <string name="device_detail_power">能耗</string>
+    <string name="device_detail_powerchart_axis_x_name">能耗（单位：千瓦时）</string>
+    <string name="device_detail_powerchart_axis_y_name">时间(单位：小时)</string>
+
+    <string name="device_found_list_activity_title">待添加设备</string>
+    <string name="device_found_list_activity_addto">添加到</string>
+
+    <string name="register_activity_title">用户注册</string>
+    <string name="register_activity_username">用户名</string>
+    <string name="register_activity_password">密  码</string>
+    <string name="register_activity_smscode">验证码</string>
+    <string name="register_activity_get_smscode">获取验证码</string>
+    <string name="register_activity_already_get_smscode">验证码已发送</string>
+    <string name="register_activity_username_password_error">用户名密码输入不正确，请重新输入</string>
+    <string name="register_activity_password_not_same">请确认两次输入的密码一致</string>
+    <string name="register_activity_register_error">注册失败，请稍后重试</string>
+    <string name="register_activity_register_btn">注册</string>
+    <string name="register_activity_register_checkbox">我已同意并阅读</string>
+    <string name="register_activity_register_checkbox_protocol">《XXXX 协议》</string>
+
+    <string name="user_info_edit_activity_title">用户信息</string>
+    <string name="user_info_edit_activity_header">头  像</string>
+    <string name="user_info_edit_activity_username">用户名</string>
+    <string name="user_info_edit_activity_mobilenum">手机号</string>
+    <string name="user_info_edit_activity_email">邮  箱</string>
+    <string name="user_info_edit_activity_username_error">用户名不能为空</string>
+    <string name="user_info_edit_activity_mobilenum_error">手机号不能为空</string>
+    <string name="user_info_edit_activity_mobilenum_format_error">手机号格式错误</string>
+    <string name="user_info_edit_activity_email_error">邮箱地址不能为空</string>
+    <string name="user_info_edit_activity_email_format_error">邮箱地址格式错误</string>
+
+    <string name="capture_activity_get_qrcode_note">请扫描网关上的二维码</string>
+    <string name="capture_result_loading_note">正在绑定...</string>
+    <string name="capture_result_loading_result_ok">绑定成功</string>
+    <string name="capture_result_loading_result_fail">绑定失败</string>
+
+    <string name="house_info_activity_title">住宅信息</string>
+    <string name="house_info_activity_house">住宅</string>
+    <string name="house_info_activity_room">房间</string>
+    <string name="house_info_activity_remark">备注</string>
+    <string name="house_info_activity_add_house">添加住宅</string>
+
+    <string name="house_management_activity_title">住宅管理</string>
+    <string name="house_management_activity_add_house">添加住宅</string>
+    <string name="house_management_activity_house">住宅</string>
+
+    <string name="family_member_management_activity_title">家庭成员管理</string>
+    <string name="family_member_management_activity_add">添加</string>
+    <string name="family_member_management_activity_delete">删除</string>
+    <string name="family_member_management_activity_qrcode">请家庭成员扫描以上二维码进行注册</string>
+
+    <string name="feedback_activity_title">意见反馈</string>
+    <string name="feedback_activity_hint">请留下您宝贵的意见... </string>
+    <string name="feedback_activity_submit">提 交</string>
+
+    <string name="login_activity_title">用户登录</string>
+    <string name="login_activity_username">用户名</string>
+    <string name="login_activity_password">密码</string>
+    <string name="login_activity_login">登录</string>
+    <string name="login_activity_forget_password">忘记密码</string>
+    <string name="login_activity_register">注册用户</string>
+    <string name="login_activity_login_as_thirdpart">社交账号登录</string>
+    <string name="login_activity_login_weixin">微信</string>
+    <string name="login_activity_login_qq">QQ</string>
+    <string name="login_activity_login_weibo">微博</string>
+    <string name="login_activity_login_error">用户名或密码错误</string>
+
+    <string name="password_recovery_title">密码找回</string>
+    <string name="password_recovery_mobile_tip">请输入手机号</string>
+    <string name="password_recovery_smscode_send">重新获取</string>
+    <string name="password_recovery_smscode_tip">请输入收到的验证码</string>
+    <string name="password_recovery_smscode_error">验证码错误</string>
+    <string name="password_recovery_final_tip">新密码已发送到您的邮箱,请登录邮箱进行设置</string>
+
+    <string name="message_center_detail_title">消息详情</string>
+
+    <string name="police_management_model">能耗模式</string>
+    <string name="police_management_statistic">能耗统计</string>
+
+    <string name="weather_air_quality_excellent">空气优质</string>
+    <string name="weather_air_quality_good">空气良好</string>
+    <string name="weather_air_quality_poor">空气较差</string>
+    <string name="weather_air_quality_terrible">空气极差</string>
+
+    <string name="plz_draw_code">请绘制手势密码</string>
+    <string name="pwd_setted">密码已经保存</string>
+    <string name="pwd_correct">密码正确</string>
+
+    <!-- 和目 -->
+    <string name="wh_hm_module_hm">和目</string>
+    <string name="ok">确定</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="capture_saved">Saved to %s</string>
+    <string name="failed">Failed.</string>
+    <string name="capture_low_memory">存储空间不足，视频记录将停止</string>
+    <string name="wh_hm_cancel">取消</string>
+    <string name="wh_hm_content_nothing">暂无异常记录的视频</string>
+    <string name="wh_hm_delete">删除</string>
+    <string name="wh_hm_cancel_all_select">取消全选</string>
+    <string name="wh_hm_all_select">全选</string>
+    <string name="wh_hm_select_count">项被选中</string>
+    <string name="wh_hm_play">播放</string>
+    <string name="wh_hm_warn_info_scene">实况</string>
+    <string name="wh_hm_warn_info_voice">声音</string>
+    <string name="wh_hm_warn_info_wi">告警信息</string>
+    <string name="wh_hm_settings_camera_label">摄像头</string>
+    <string name="camera_detail_label">摄像头详情</string>
+    <string name="wh_hm_settings_camera_switch_label">摄像头开关</string>
+    <string name="camera_voice_switch_label">摄像头麦克风</string>
+    <string name="light_state_switch_label">状态指示灯</string>
+    <string name="night_state_label">夜视</string>
+    <string name="night_state_auto">自动</string>
+    <string name="night_state_off">关闭</string>
+    <string name="night_state_on">开启</string>
+    <string name="voice_listen_switch_label">声音监控</string>
+    <string name="move_check_switch_label">动作检测</string>
+    <string name="hm_notify_set">通知设置</string>
+    <string name="hm_check_sensibility_set_label">检测灵敏度设置</string>
+    <string name="sensibility_low">低</string>
+    <string name="sensibility_default">默认值</string>
+    <string name="sensibility_height">高</string>
+    <string name="wh_hm_settings_device_name_label">设备名称</string>
+    <string name="wh_hm_settings_device_name">卧室</string>
+    <string name="wh_hm_settings_version">版本</string>
+    <string name="wh_hm_settings_info">信息</string>
+    <string name="wh_hm_settings_netwrok_label">WiFi网络</string>
+    <string name="wh_hm_settings_detail_info">详细信息</string>
+    <string name="camera_flicker_prev_label">防闪烁</string>
+    <string name="camera_firmware_label">固件</string>
+    <string name="camera_imei_label">设备IMEI</string>
+    <string name="camera_mac_addr_label">MAC地址</string>
+    <string name="camera_flushbonading_label">嵌入式应用</string>
+    <string name="wh_hm_warn_info_long_click_start">长按开始</string>
+    <string name="wh_hm_warn_info_long_click_cancel">松开结束收听</string>
+    <string name="wh_hm_camera_offline">Camera is offline</string>
+    <string name="hm_title_msg">My device</string>
+    <!-- 和目 -->
+
+    <string name="finish">完成</string>
+    <string name="edit">编辑</string>
+    <string name="clearall">清空</string>
+    <string name="next">下一步</string>
+    <string name="word_city">市</string>
+    <string name="add_to_home_view">添加到首页</string>
+    <string name="tip_exit">再按一次退出程序</string>
+
+
+    <!-- health env activity-->
+    <string name="title_activity_health_env">健康环境</string>
+    <string name="str_title_ourdoor">室外</string>
+    <string name="str_title_indoor">室内</string>
+
+    <string name="txt_location">%1$s %2$s</string>
+    <string name="txt_location_default">北京 建内大街</string>
+    <string name="txt_input_temperature">%1$d&#176;</string>
+    <string name="txt_temperature_default">26&#176;</string>
+    <string name="txt_humidity_default">18%</string>
+    <string name="txt_wind">%1$s级</string>
+    <string name="txt_wind_default">2级</string>
+    <string name="txt_pollution">%1$d</string>
+    <string name="txt_air">%1$dug\/m</string>
+    <string name="txt_co2">%1$dppm</string>
+    <string name="txt_air_default">330ug/m</string>
+    <string name="txt_pollution_unit">ug\/m</string>
+    <string name="txt_air_grade_default">质量极好</string>
+    <string name="txt_sunlight">%1$d级</string>
+
+    <string name="txt_bottom_button_temperature">%1$d&#176;</string>
+    <string name="txt_bottom_button_date">今天</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="txt_monday">周一</string>
+    <string name="txt_tuesday">周二</string>
+    <string name="txt_wednesday">周三</string>
+    <string name="txt_thursday">周四</string>
+    <string name="txt_friday">周五</string>
+    <string name="txt_saturday">周六</string>
+    <string name="txt_sunday">周日</string>
+
+    <string name="txt_tab_health_env_left">室外</string>
+    <string name="txt_tab_health_env_right">室内</string>
+
+    <string name="txt_month_unit"> </string>
+    <string name="txt_date_unit"> </string>
+
+    <!-- indoor fragment -->
+    <string name="txt_living_room">客厅</string>
+    <string name="txt_tab_temperature">温度</string>
+    <string name="txt_tab_humidity">湿度</string>
+    <string name="txt_tab_air">空气</string>
+    <string name="txt_tab_window">窗户</string>
+    <string name="txt_add_to_frontpage">添加到首页</string>
+    <string name="txt_cancel_setting">取消设定</string>
+
+    <string name="txt_target_temperature">目标温度</string>
+    <string name="txt_target_humidity">目标湿度</string>
+    <string name="txt_target_air">目标空气质量</string>
+    <string name="txt_target_window">窗户</string>
+
+    <string name="txt_air_good">优</string>
+    <string name="txt_air_decent">良</string>
+    <string name="txt_air_poor">中</string>
+    <string name="txt_air_close">关闭</string>
+
+    <string name="txt_window_open">开窗</string>
+    <string name="txt_window_close">关窗</string>
+    <string name="txt_window_pause">暂停</string>
+
+    <string name="txt_menu_save">保存</string>
+
+    <!-- config health env activity -->
+    <string name="title_activity_config_health_env">配置</string>
+    <string name="txt_date">%1$d月%2$d日</string>
+    <string name="txt_date_default">2月7日</string>
+    <string name="txt_consumption">消耗</string>
+    <string name="txt_conservation">节能</string>
+    <string name="txt_time">%1$d:%2$d</string>
+    <string name="txt_time_default">16:26</string>
+
+
+    <!-- smart lighting -->
+    <string name="title_activity_smart_lighting">智能照明</string>
+    <string name="txt_curtain">窗帘</string>
+    <string name="txt_bed_light">床头灯</string>
+    <string name="txt_desk_lamp">台灯</string>
+    <string name="txt_ceiling_light">顶灯</string>
+    <string name="txt_floor_light">地灯</string>
+    <string name="txt_adjustable_light">调光灯</string>
+    <string name="txt_color">颜色</string>
+    <string name="txt_light">亮度</string>
+
+    <string name="btn_on">开</string>
+    <string name="btn_pause">暂停</string>
+    <string name="btn_off">关</string>
+
+    <!-- surveillance -->
+    <string name="title_activity_surveillance">家居安防</string>
+    <string name="txt_kitchen_utensil_monitoring">餐具监控</string>
+    <string name="txt_gas_monitoring">燃气监控</string>
+    <string name="txt_glass_monitoring">玻璃监控</string>
+    <string name="txt_water_monitoring">水浸监控</string>
+    <string name="txt_curtain_monitoring">帘幕监控</string>
+    <string name="txt_alerts">警报监控</string>
+    <string name="txt_cameras">视频监控</string>
+    <string name="txt_running">正在运行</string>
+    <string name="txt_log">警情日志</string>
+    <string name="txt_gate_camera">大门监控</string>
+    <string name="title_activity_set_time">时间设定</string>
+    <string name="security_on">已布防</string>
+    <string name="security_off">已撤防</string>
+
+    <!--system state !-->
+    <string name="at_home">回家</string>
+    <string name="leaving_home">离家</string>
+    <string name="power_off">关闭</string>
+    <!-- common -->
+    <string name="txt_cancel">取消</string>
+    <string name="txt_save">保存</string>
+    <string name="txt_confirm">确认</string>
+
+    <!-- RoomControlTemperatureView -->
+    <string name="txt_temperature">当前温度：%1$1.1f</string>
+    <string name="txt_humidity">当前湿度：%1$1.1f</string>
+</resources>

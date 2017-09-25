@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      android:background="@drawable/camera_bg">
+
+      <ImageButton
+          android:id="@+id/delete_btn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="4dp"
+          android:background="@drawable/delete_btn"
+          android:layout_alignParentLeft="true"
+          android:visibility="gone"/>
+
+      <LinearLayout
+          android:id="@+id/text_frame1"
+          android:layout_toRightOf="@id/delete_btn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="16dp"
+          android:layout_marginTop="12dp"
+          android:orientation="horizontal">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="设置："
+              android:textSize="10sp"
+              android:textColor="@color/text_hint"
+              />
+          <TextView
+              android:id="@+id/value"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="4dp"
+              android:text="26℃"
+              android:textColor="@color/grown_black"
+              android:textSize="16sp"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:text="开始时间："
+              android:textSize="10sp"
+              android:textColor="@color/text_hint"
+              />
+          <TextView
+              android:id="@+id/time"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="4dp"
+              android:text="19:00"
+              android:textColor="@color/grown_black"
+              android:textSize="16sp"/>
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/text_frame2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@id/delete_btn"
+          android:layout_below="@id/text_frame1"
+          android:layout_alignLeft="@id/text_frame1"
+          android:orientation="horizontal">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="重复："
+              android:textSize="10sp"
+              android:textColor="@color/text_hint"
+              />
+          <TextView
+              android:id="@+id/day"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="4dp"
+              android:text="周一 周二 周四"
+              android:textColor="@color/grown_black"
+              android:textSize="10sp"/>
+      </LinearLayout>
+
+      <ImageButton
+          android:id="@+id/switch_btn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/switch_off_1"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="18dp"
+          android:layout_alignParentRight="true"/>
+
+      <ImageButton
+          android:id="@+id/detail_btn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/next_btn"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="20dp"
+          android:layout_alignParentRight="true"
+          android:visibility="gone"/>
+
+  </RelativeLayout>
+</RelativeLayout>

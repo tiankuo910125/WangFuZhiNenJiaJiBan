@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/room_air_frame"
+    android:layout_width="match_parent"
+    android:layout_height="346dp"
+    android:background="@null"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22.5dp"
+            android:layout_marginTop="22.5dp"
+            android:background="@drawable/room_control_divider" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="空气净化"
+            android:textColor="@color/grown_black"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="282dp"
+        android:layout_height="301dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/air_control_bg">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="207.5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:background="@null"
+                android:layout_width="127.5dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/pm25_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/stic_pm25_alert" />
+
+                    <TextView
+                        android:id="@+id/pm25_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@id/pm25_icon"
+                        android:text="PM2.5"
+                        android:textColor="@color/grown_black"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/pm25_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:text="--"
+                        android:textColor="#fc6d17"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/co2_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/stic_co2_alert" />
+
+                    <TextView
+                        android:id="@+id/co2_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@id/co2_icon"
+                        android:text="Co2"
+                        android:textColor="@color/grown_black"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/co2_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:text="--"
+                        android:textColor="#fc6d17"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/voc_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/stic_voc_alert" />
+
+                    <TextView
+                        android:id="@+id/voc_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@id/voc_icon"
+                        android:text="VOC"
+                        android:textColor="@color/grown_black"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/voc_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:text="--"
+                        android:textColor="@color/grown_black"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/hcho_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/stic_hcho_alert" />
+
+                    <TextView
+                        android:id="@+id/hcho_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@id/hcho_icon"
+                        android:text="甲醛"
+                        android:textColor="@color/grown_black"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/hcho_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:text="--"
+                        android:textColor="@color/grown_black"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/press_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/stic_press_alert" />
+
+                    <TextView
+                        android:id="@+id/press_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@id/press_icon"
+                        android:text="压差"
+                        android:textColor="@color/grown_black"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/press_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:text="--"
+                        android:textColor="@color/grown_black"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="16dp"
+                        android:text="空气控制"
+                        android:textColor="@color/grown_black"
+                        android:textSize="10sp" />
+
+                    <ImageButton
+                        android:id="@+id/air_control_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18dp"
+                        android:background="@drawable/switch_on" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/air_status_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/led_charator_perfect" />
+
+                <com.demo.smarthome.ui.base.CircleSeekButton
+                    android:id="@+id/air_circle_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    app:button_initValue="5"
+                    app:button_maxValue="100"
+                    app:button_minValue="0" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="85.5dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+
+            <com.demo.smarthome.hellocharts.view.LineChartView
+                android:id="@+id/air_histroy_data_chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="@drawable/line_chart_bg"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

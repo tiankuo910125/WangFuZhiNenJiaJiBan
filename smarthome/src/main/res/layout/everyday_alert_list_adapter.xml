@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/date_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="22dp">
+        <TextView
+            android:id="@+id/day_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:textColor="@color/grown_black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/month_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/day_text"
+            android:layout_marginLeft="10dp"
+            android:text="九月"
+            android:textColor="@color/text_hint"
+            android:textSize="12dp"
+            android:layout_alignBottom="@id/day_text"/>
+
+        <TextView
+            android:id="@+id/weekday_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="星期五"
+            android:textColor="@color/text_hint"
+            android:textSize="12dp"
+            android:layout_alignBottom="@id/day_text"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_title"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="16dp">
+
+        <ImageView
+            android:id="@+id/vertical_divider"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/vertical_divider2"/>
+        <com.demo.smarthome.ui.base.NotScrollListView
+            android:id="@+id/alert_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".FeedbackActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/feedback_activity_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:theme="@style/AppTheme.AppBarOverlay">
+        <TextView
+            android:id="@+id/feedback_activity_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feedback_activity_title"
+            android:layout_marginTop="@dimen/toolbar_title_top_margin"
+            android:textSize="@dimen/toolbar_title_text_size"
+            android:textColor="@color/white"
+            android:layout_gravity="center" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/feedback_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/feedback_edit_height"
+            android:hint="@string/feedback_activity_hint"
+            android:textColorHint="@color/gray"
+            android:gravity="left|top"
+            android:textSize="@dimen/feedback_text_size"
+            android:textColor="@color/black"
+            android:background="@color/background"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/feedback_edit"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/upload_pic_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传故障照片"
+            android:textColor="@color/black"
+            android:layout_below="@id/feedback_edit"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="25dp"/>
+
+        <ImageView
+            android:id="@+id/upload_pic_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_picture_btn"
+            android:layout_below="@id/upload_pic_title"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="16dp"
+            />
+
+        <TextView
+            android:id="@+id/service_phone_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拨打客服电话   400-800-4000"
+            android:textColor="@color/black"
+            android:layout_below="@id/upload_pic_btn"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="25dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp">
+            <Button
+                android:id="@+id/feedback_submit_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ok_btn"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="完成"
+                android:textColor="@color/grown_black"
+                android:textSize="12sp"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

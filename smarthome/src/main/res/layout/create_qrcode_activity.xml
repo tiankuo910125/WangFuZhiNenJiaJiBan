@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_light" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/house_name_frame"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/list_bg2">
+
+            <TextView
+                android:id="@+id/house_name"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="住宅1"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/house_name_frame"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/house_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/house_name_frame"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:text="融科橄榄城9号楼2单元2107"
+            android:textColor="@color/text_hint"
+            android:textSize="12sp" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/add_user_qrcode"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/qrcode_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_user_qrcode"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/family_member_management_activity_qrcode"
+            android:textColor="@color/grown_black"
+            android:textSize="12dp" />
+    </RelativeLayout>
+</LinearLayout>

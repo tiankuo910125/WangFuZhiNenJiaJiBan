@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/UserHeaderimageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                fresco:actualImageScaleType="centerInside"
+                fresco:roundAsCircle="true"
+                fresco:placeholderImage="@drawable/ic_user"/>
+
+            <TextView
+                android:id="@+id/UserHeadertextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="123456"
+                android:textSize="@dimen/nav_header_text_size"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:id="@+id/nav_house_status"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nav_header_item_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:text="@string/action_house_status"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/nav_header_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/nav_header_item_pic_width"
+                    android:layout_height="@dimen/nav_header_item_pic_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/to_right_menu_btn" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_hight"
+                android:layout_marginLeft="24dp"
+                android:background="#ededed"/>
+
+            <RelativeLayout
+                android:id="@+id/nav_room_control"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="@dimen/nav_header_item_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:text="@string/action_control"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/nav_header_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/nav_header_item_pic_width"
+                    android:layout_height="@dimen/nav_header_item_pic_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/to_right_menu_btn" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/nav_alert_record"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="@dimen/nav_header_item_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:text="@string/action_alert_record"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/nav_header_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/nav_header_item_pic_width"
+                    android:layout_height="@dimen/nav_header_item_pic_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/to_right_menu_btn" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/nav_message"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nav_header_item_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:text="@string/action_message_center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/nav_header_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/nav_header_item_pic_width"
+                    android:layout_height="@dimen/nav_header_item_pic_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/to_right_menu_btn" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_hight"
+                android:layout_marginLeft="24dp"
+                android:background="#ededed"/>
+
+
+            <RelativeLayout
+                android:id="@+id/nav_device_log"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nav_header_item_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:text="@string/action_system_log"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/nav_header_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/nav_header_item_pic_width"
+                    android:layout_height="@dimen/nav_header_item_pic_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/to_right_menu_btn" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_hight"
+                android:layout_marginLeft="24dp"
+                android:background="#ededed"/>
+
+            <RelativeLayout
+                android:id="@+id/nav_house_management"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nav_header_item_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:text="@string/action_house_management"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/nav_header_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/nav_header_item_pic_width"
+                    android:layout_height="@dimen/nav_header_item_pic_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/to_right_menu_btn" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_hight"
+                android:layout_marginLeft="24dp"
+                android:background="#ededed"/>
+
+
+            <RelativeLayout
+                android:id="@+id/nav_user"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nav_header_item_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:text="@string/action_user"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/nav_header_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/nav_header_item_pic_width"
+                    android:layout_height="@dimen/nav_header_item_pic_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/to_right_menu_btn" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_hight"
+                android:layout_marginLeft="24dp"
+                android:background="#ededed"/>
+
+            <RelativeLayout
+                android:id="@+id/nav_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nav_header_item_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:text="@string/action_feedback"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/nav_header_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/nav_header_item_pic_width"
+                    android:layout_height="@dimen/nav_header_item_pic_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/to_right_menu_btn" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_hight"
+                android:layout_marginLeft="24dp"
+                android:background="#ededed"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

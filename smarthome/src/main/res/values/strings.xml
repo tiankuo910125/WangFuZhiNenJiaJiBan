@@ -1,0 +1,321 @@
+<resources>
+    <string name="app_name">SmartHome</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="quit">退出</string>
+    <string name="settings">设置</string>
+    <string name="welcome_morning">Good Morning!</string>
+    <string name="welcome_afternoon">Good Afternoon!</string>
+    <string name="welcome_night">Good Evening!</string>
+    <string name="help">帮助</string>
+    <string name="string_help_text">当前应用缺少\"读写手机存储\"权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击两次后退按钮，即可返回。</string>
+    <string name="action_control">Room Control</string>
+    <string name="action_alert_record">Alert Record</string>
+    <string name="action_system_log">System Log</string>
+    <string name="action_user">User Centre</string>
+    <string name="action_feedback">FeedBack</string>
+    <string name="action_message_center">Message Center</string>
+    <string name="action_house_management">House Management</string>
+    <string name="action_house_status">House Status</string>
+
+    <string name="widget_environment_title">Health Environemnt</string>
+    <string name="widget_security_title">Home Security</string>
+
+    <string name="user_center_activity_title">User Center</string>
+    <string name="user_center_switch_account_button">Switch account</string>
+    <string name="user_center_quit_account_button">Quit account</string>
+    <string name="user_center_list_group_segmentation_1">LockScreen Password</string>
+    <string name="user_center_list_group_segmentation_2"> </string>
+
+    <string name="user_center_list_group1_item1">Family Member Management</string>
+
+    <string name="user_center_list_group2_item1_open">Use LockScreen Password</string>
+    <string name="user_center_list_group2_item1_cLose">Close LockScreen Password</string>
+    <string name="user_center_list_group2_item2">Reset LockScreen Password</string>
+
+    <string name="user_center_list_group3_item1">About Us</string>
+    <string name="user_center_list_group3_item2">Feedback</string>
+
+    <string name="device_management_activity_title">Device List</string>
+    <string name="device_management_device_state_ok">Running</string>
+    <string name="device_management_device_state_error">Offline</string>
+    <string name="device_management_device_waiting_added">Waiting Added</string>
+    <string name="device_management_no_device_waiting_added">There is not any devices waiting to be added </string>
+
+    <string name="device_detail_type">Type</string>
+    <string name="device_detail_factory">Vendor</string>
+    <string name="device_detail_model">Model</string>
+    <string name="device_detail_date">Product Date</string>
+    <string name="device_detail_consumables">Consumables</string>
+    <string name="device_detail_power">Power</string>
+    <string name="device_detail_powerchart_axis_x_name">Energy(kW.h)</string>
+    <string name="device_detail_powerchart_axis_y_name">Time(hour)</string>
+
+    <string name="device_found_list_activity_title">Waiting tobe added</string>
+    <string name="device_found_list_activity_addto">Add to...</string>
+
+    <string name="register_activity_title">User Registrations</string>
+    <string name="register_activity_username">Username</string>
+    <string name="register_activity_password">Password</string>
+    <string name="register_activity_smscode">SMS Code</string>
+    <string name="register_activity_get_smscode">Get SMS Code</string>
+    <string name="register_activity_already_get_smscode">Sent SMS Code</string>
+    <string name="register_activity_username_password_error">Username or Password is not correct, please try again</string>
+    <string name="register_activity_password_not_same">Please confirm the twice password be same!</string>
+    <string name="register_activity_register_error">Register error, please try again later</string>
+    <string name="register_activity_register_btn">Register</string>
+    <string name="register_activity_register_checkbox">I have already read the </string>
+    <string name="register_activity_register_checkbox_protocol">"XXXX protocol"</string>
+
+    <string name="user_info_edit_activity_title">User Detail</string>
+    <string name="user_info_edit_activity_header">Header</string>
+    <string name="user_info_edit_activity_username">Username</string>
+    <string name="user_info_edit_activity_mobilenum">Mobile</string>
+    <string name="user_info_edit_activity_email">Email</string>
+    <string name="user_info_edit_activity_username_error">Username cannot be blank</string>
+    <string name="user_info_edit_activity_mobilenum_error">Mobile cannot be blank</string>
+    <string name="user_info_edit_activity_mobilenum_format_error">Mobile format error</string>
+    <string name="user_info_edit_activity_email_error">Email cannot be blank</string>
+    <string name="user_info_edit_activity_email_format_error">Email format error</string>
+
+    <string name="capture_activity_get_qrcode_note">Please scan the qrcode on the SmartHome</string>
+    <string name="capture_result_loading_note">Registering...</string>
+    <string name="capture_result_loading_result_ok">Register OK</string>
+    <string name="capture_result_loading_result_fail">Register Fail</string>
+
+    <string name="house_info_activity_title">House Info</string>
+    <string name="house_info_activity_house">House</string>
+    <string name="house_info_activity_room">Room</string>
+    <string name="house_info_activity_remark">Remark</string>
+    <string name="house_info_activity_add_house">Add House</string>
+    <string name="house_management_activity_title">House Management</string>
+    <string name="house_management_activity_add_house">Add House</string>
+    <string name="house_management_activity_house">House</string>
+
+    <string name="family_member_management_activity_title">Family Member Management</string>
+    <string name="family_member_management_activity_add">Add</string>
+    <string name="family_member_management_activity_delete">Delete</string>
+    <string name="family_member_management_activity_qrcode">Please scan the Qrcode to register as a family member</string>
+
+    <string name="feedback_activity_title">Feedback</string>
+    <string name="feedback_activity_hint">Please leave your valuable comments... </string>
+    <string name="feedback_activity_submit">Submit</string>
+
+    <string name="plz_draw_code">Please draw your code</string>
+    <string name="pwd_setted">Your password is setted!</string>
+    <string name="pwd_correct">Your password is correct.</string>
+
+    <string name="login_activity_title">Login</string>
+    <string name="login_activity_username">Username</string>
+    <string name="login_activity_password">Password</string>
+    <string name="login_activity_login">Login</string>
+    <string name="login_activity_forget_password">Forgot Password</string>
+    <string name="login_activity_register">Register</string>
+    <string name="login_activity_login_as_thirdpart">Login use the thirdpart account</string>
+    <string name="login_activity_login_weixin">WeChat</string>
+    <string name="login_activity_login_qq">QQ</string>
+    <string name="login_activity_login_weibo">Weibo</string>
+    <string name="login_activity_login_error">Username or Password error</string>
+
+    <string name="password_recovery_title">Password Recovery</string>
+    <string name="password_recovery_mobile_tip">Please input the mobile num</string>
+    <string name="password_recovery_smscode_send">Get SMS code</string>
+    <string name="password_recovery_smscode_tip">Please input the sms code</string>
+    <string name="password_recovery_smscode_error">SMS Code error</string>
+    <string name="password_recovery_final_tip">The new password was sent to your email,please check</string>
+
+    <string name="message_center_detail_title">Message Detail</string>
+
+    <string name="police_management_model">Energy Consumption Mode</string>
+    <string name="police_management_statistic">Energy Consumption Statistic</string>
+
+    <string name="weather_air_quality_excellent">Excellent</string>
+    <string name="weather_air_quality_good">Good</string>
+    <string name="weather_air_quality_poor">Poor</string>
+    <string name="weather_air_quality_terrible">Terrible</string>
+
+    <string name="finish">Finish</string>
+    <string name="edit">Edit</string>
+    <string name="clearall">Clear All</string>
+    <string name="next">Next</string>
+    <string name="word_city">city</string>
+    <string name="add_to_home_view">Add to Home View</string>
+    <string name="tip_exit">Press Back again to exit this app</string>
+
+    <!-- 和目 -->
+    <string name="wh_hm_module_hm">Hemu</string>
+    <string name="ok">OK</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="capture_saved">Saved to %s</string>
+    <string name="failed">Failed.</string>
+    <string name="capture_low_memory">Low storage space. Recording has stopped.</string>
+    <string name="wh_hm_cancel">Cancel</string>
+    <string name="wh_hm_content_nothing">No abnormalities recorded video</string>
+    <string name="wh_hm_delete">Delete</string>
+    <string name="wh_hm_cancel_all_select">cancel all select</string>
+    <string name="wh_hm_all_select">Select all</string>
+    <string name="wh_hm_select_count">was selected</string>
+    <string name="wh_hm_play">play</string>
+    <string name="wh_hm_warn_info_scene">scene</string>
+    <string name="wh_hm_warn_info_voice">voice</string>
+    <string name="wh_hm_warn_info_wi">warning information</string>
+    <string name="wh_hm_settings_camera_label">Camera</string>
+    <string name="camera_detail_label">the detail of camera</string>
+    <string name="wh_hm_settings_camera_switch_label">camera switch</string>
+    <string name="camera_voice_switch_label">webcam mic</string>
+    <string name="light_state_switch_label">state light</string>
+    <string name="night_state_label">Night vision</string>
+    <string name="night_state_auto">auto</string>
+    <string name="night_state_off">off</string>
+    <string name="night_state_on">on</string>
+    <string name="voice_listen_switch_label">audio monitor</string>
+    <string name="move_check_switch_label">action detection</string>
+    <string name="hm_notify_set">notify setting</string>
+    <string name="hm_check_sensibility_set_label">sensitivity inspection setting</string>
+    <string name="sensibility_low">low</string>
+    <string name="sensibility_default">default</string>
+    <string name="sensibility_height">high</string>
+    <string name="wh_hm_settings_device_name_label">device name</string>
+    <string name="wh_hm_settings_device_name">bedroom</string>
+    <string name="wh_hm_settings_version">version</string>
+    <string name="wh_hm_settings_info">information</string>
+    <string name="wh_hm_settings_netwrok_label">WiFi network</string>
+    <string name="wh_hm_settings_detail_info">detailed information</string>
+    <string name="camera_flicker_prev_label">flash-prevention</string>
+    <string name="camera_firmware_label">firmware</string>
+    <string name="camera_imei_label">IMEI</string>
+    <string name="camera_mac_addr_label">MAC address</string>
+    <string name="camera_flushbonading_label">Embedded application</string>
+    <string name="wh_hm_warn_info_long_click_start">You need to continue to press the button to start</string>
+    <string name="wh_hm_warn_info_long_click_cancel">You need to loosen the button to end listening</string>
+    <string name="wh_hm_camera_offline">Camera in the offline state</string>
+    <string name="hm_title_msg">My device</string>
+    <!-- 和目 -->
+
+    <!-- health env activity-->
+    <string name="title_activity_health_env">HealthEnvActivity</string>
+    <string name="str_title_ourdoor">室外</string>
+    <string name="str_title_indoor">室内</string>
+
+    <string name="txt_location">%1$s %2$s</string>
+    <string name="txt_location_default">北京 建内大街</string>
+    <string name="txt_input_temperature">%1$d&#176;</string>
+    <string name="txt_temperature_default">26&#176;</string>
+    <string name="txt_humidity_default">18%</string>
+    <string name="txt_wind">%1$s级</string>
+    <string name="txt_wind_default">2级</string>
+    <string name="txt_pollution">%1$d</string>
+    <string name="txt_air">%1$dug\/m</string>
+    <string name="txt_air_default">330ug/m</string>
+    <string name="txt_co2">%1$dppm</string>
+    <string name="txt_pollution_unit">ug\/m</string>
+    <string name="txt_air_grade_default">质量极好</string>
+    <string name="txt_sunlight">%1$d级</string>
+
+    <string name="txt_bottom_button_temperature">%1$d&#176;</string>
+    <string name="txt_bottom_button_date">今天</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="txt_monday">周一</string>
+    <string name="txt_tuesday">周二</string>
+    <string name="txt_wednesday">周三</string>
+    <string name="txt_thursday">周四</string>
+    <string name="txt_friday">周五</string>
+    <string name="txt_saturday">周六</string>
+    <string name="txt_sunday">周日</string>
+
+    <string name="txt_tab_health_env_left">室外</string>
+    <string name="txt_tab_health_env_right">室内</string>
+
+    <!-- indoor fragment -->
+    <string name="txt_living_room">客厅</string>
+    <string name="txt_tab_temperature">温度</string>
+    <string name="txt_tab_humidity">湿度</string>
+    <string name="txt_tab_air">空气</string>
+    <string name="txt_tab_window">窗户</string>
+    <string name="txt_add_to_frontpage">添加到首页</string>
+    <string name="txt_cancel_setting">取消设定</string>
+
+    <string name="txt_target_temperature">目标温度</string>
+    <string name="txt_target_humidity">目标湿度</string>
+    <string name="txt_target_air">目标空气质量</string>
+    <string name="txt_target_window">Window State</string>
+
+    <string name="txt_air_good">优</string>
+    <string name="txt_air_decent">良</string>
+    <string name="txt_air_poor">中</string>
+    <string name="txt_air_close">关闭</string>
+
+    <string name="txt_window_open">开窗</string>
+    <string name="txt_window_close">关窗</string>
+    <string name="txt_window_pause">暂停</string>
+
+    <string name="txt_menu_save">Save</string>
+
+    <!-- config health env activity -->
+    <string name="title_activity_config_health_env">Config</string>
+    <string name="txt_date">%1$d/%2$d</string>
+    <string name="txt_date_default">02/07</string>
+    <string name="txt_consumption">Consumption</string>
+    <string name="txt_conservation">Conservation</string>
+    <string name="txt_time">%1$d:%2$d</string>
+    <string name="txt_time_default">16:26</string>
+
+    <string name="txt_month_unit"> </string>
+    <string name="txt_date_unit"> </string>
+
+    <!-- smart lighting -->
+    <string name="title_activity_smart_lighting">SmartLighting</string>
+    <string name="txt_curtain">窗帘</string>
+    <string name="txt_bed_light">床头灯</string>
+    <string name="txt_desk_lamp">台灯</string>
+    <string name="txt_ceiling_light">顶灯</string>
+    <string name="txt_floor_light">地灯</string>
+    <string name="txt_adjustable_light">调光灯</string>
+    <string name="txt_color">颜色</string>
+    <string name="txt_light">亮度</string>
+
+    <string name="btn_on">开</string>
+    <string name="btn_pause">暂停</string>
+    <string name="btn_off">关</string>
+
+    <!-- surveillance -->
+    <string name="title_activity_surveillance">SurveillanceActivity</string>
+    <string name="txt_kitchen_utensil_monitoring">餐具监控</string>
+    <string name="txt_gas_monitoring">燃气监控</string>
+    <string name="txt_glass_monitoring">玻璃监控</string>
+    <string name="txt_water_monitoring">自来水监控</string>
+    <string name="txt_curtain_monitoring">帘幕监控</string>
+    <string name="txt_alerts">警报监控</string>
+    <string name="txt_cameras">视频监控</string>
+    <string name="txt_running">正在运行</string>
+    <string name="txt_log">警情日志</string>
+    <string name="txt_gate_camera">大门监控</string>
+    <string name="title_activity_set_time">SetTimeActivity</string>
+    <string name="security_on">Security ON</string>
+    <string name="security_off">Security OFF</string>
+
+    <!--system state !-->
+    <string name="at_home">At Home</string>
+    <string name="leaving_home">Leaving Home</string>
+    <string name="power_off">Power off</string>
+
+
+    <!-- common -->
+    <string name="txt_cancel">Cancel</string>
+    <string name="txt_save">Save</string>
+    <string name="txt_confirm">Confirm</string>
+
+    <!-- RoomControlTemperatureView -->
+    <string name="txt_temperature">Temperature:%1$1.1f</string>
+    <string name="txt_humidity">Humidity:%1.1f</string>
+
+    <!--<string name="header_hint_refresh_normal">下拉刷新</string>-->
+    <!--<string name="header_hint_refresh_ready">松开开始刷新</string>-->
+    <!--<string name="header_hint_refresh_loading">正在刷新...</string>-->
+    <!--<string name="header_hint_refresh_time">更新于：</string>-->
+    <!--<string name="footer_hint_load_normal">上拉加载更多</string>-->
+    <!--<string name="footer_hint_load_ready">松开加载下一页</string>-->
+</resources>

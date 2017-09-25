@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/WangFuZhiNenJiaJiBan.iml" filepath="$PROJECT_DIR$/WangFuZhiNenJiaJiBan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gizwitopenapi/gizwitopenapi.iml" filepath="$PROJECT_DIR$/gizwitopenapi/gizwitopenapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smarthome/smarthome.iml" filepath="$PROJECT_DIR$/smarthome/smarthome.iml" />
+    </modules>
+  </component>
+</project>

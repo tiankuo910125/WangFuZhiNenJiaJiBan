@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/camera_bg">
+        <ImageView
+            android:id="@+id/lamp_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/stic_light_nomal"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/lamp_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13.5dp"
+            android:layout_toRightOf="@id/lamp_icon"
+            android:layout_centerVertical="true"
+            android:text="白炽灯1状态："
+            android:textColor="@color/grown_black"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/lamp_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/lamp_name"
+            android:text="开"
+            android:textColor="@color/grown_black"
+            android:textSize="10sp"/>
+
+        <ImageButton
+            android:id="@+id/lamp_control_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/switch_on_1"/>
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="18dp">-->
+            <!--<ImageButton-->
+                <!--android:id="@+id/lamp_control_switch"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/switch_3_auto" />-->
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_marginBottom="6dp"-->
+                <!--android:layout_alignLeft="@id/lamp_control_switch"-->
+                <!--android:layout_alignRight="@id/lamp_control_switch">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginBottom="6dp"-->
+                <!--android:text="关"-->
+                <!--android:textSize="6sp"-->
+                <!--android:textColor="@color/grown_black" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginBottom="6dp"-->
+                <!--android:text="开"-->
+                <!--android:textSize="6sp"-->
+                <!--android:textColor="@color/grown_black" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_marginBottom="6dp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:text="自动"-->
+                <!--android:textSize="6sp"-->
+                <!--android:textColor="@color/grown_black" />-->
+            <!--</RelativeLayout>-->
+        <!--</RelativeLayout>-->
+    </RelativeLayout>
+</RelativeLayout>

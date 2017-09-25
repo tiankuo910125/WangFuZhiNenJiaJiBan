@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+    <ImageView
+        android:id="@+id/point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/point_gray"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/alert_item_time"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/point"
+        android:layout_centerVertical="true"
+        android:textSize="12sp"
+        android:textColor="@color/grown_black"
+        android:text="@string/txt_time_default"
+        />
+
+    <TextView
+        android:id="@+id/alert_item_title"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/alert_item_time"
+        android:layout_centerVertical="true"
+        android:textSize="12sp"
+        android:textColor="@color/grown_black"
+        android:text="@string/txt_alerts"
+        />
+
+    <TextView
+        android:id="@+id/alert_item_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/alert_item_title"
+        android:layout_centerVertical="true"
+        android:textSize="12sp"
+        android:textColor="@color/grown_black"
+        android:text="@string/txt_alerts"
+        />
+    </RelativeLayout>
+</RelativeLayout>

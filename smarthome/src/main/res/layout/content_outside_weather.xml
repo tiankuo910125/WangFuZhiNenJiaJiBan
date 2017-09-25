@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_viewpage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/weather_container_bg">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/weather_container"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/runtime_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@drawable/weather_runtime_bg">
+                <TextView
+                    android:id="@+id/city_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="北京"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/grown_black"/>
+
+                <TextView
+                    android:id="@+id/house_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/city_name"
+                    android:layout_marginTop="2dp"
+                    android:text="朝阳区融科橄榄城"
+                    android:textSize="12sp"
+                    android:textColor="@color/grown_black"/>
+
+                <RelativeLayout
+                    android:id="@+id/outside_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_below="@id/house_address">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp">
+
+                        <RelativeLayout
+                            android:id="@+id/temperature_led"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <com.demo.smarthome.ui.base.CircleProgressView
+                                android:id="@+id/temperature_progress"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_centerInParent="true"
+                                app:minValue="-40"
+                                app:maxValue="40"
+                                app:initValue="0"/>
+
+                            <com.demo.smarthome.ui.base.LedCharactorView
+                                android:id="@+id/temperature_led_value"
+                                android:layout_width="50dp"
+                                android:layout_height="30dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/led_bg"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:text="当前温度"
+                                android:textSize="10sp"
+                                android:textColor="@color/gray"
+                                />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/humidity_led"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <com.demo.smarthome.ui.base.CircleProgressView
+                                android:id="@+id/humidity_progress"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_centerInParent="true"
+                                app:minValue="0"
+                                app:maxValue="100"
+                                app:initValue="50"/>
+                            <com.demo.smarthome.ui.base.LedCharactorView
+                                android:id="@+id/humidity_led_value"
+                                android:layout_width="50dp"
+                                android:layout_height="30dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/led_bg"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="当前湿度"
+                                android:textSize="10sp"
+                                android:textColor="@color/gray"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/airquality_led"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <com.demo.smarthome.ui.base.CircleProgressView
+                                android:id="@+id/airquality_progress"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_centerInParent="true"
+                                app:minValue="0"
+                                app:maxValue="500"
+                                app:initValue="50"/>
+                            <com.demo.smarthome.ui.base.LedCharactorView
+                                android:id="@+id/airquality_led_value"
+                                android:layout_width="50dp"
+                                android:layout_height="30dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/led_bg"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:text="当前pm2.5"
+                                android:textSize="10sp"
+                                android:textColor="@color/gray"
+                                />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/outside_status">
+                    <TextView
+                        android:id="@+id/today_weekday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:text="星期四"
+                        android:textColor="@color/grown_black"
+                        android:textSize="10sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/today_weekday"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:text="今天"
+                        android:textColor="@color/grown_black"
+                        android:textSize="10sp"/>
+
+                    <TextView
+                        android:id="@+id/min_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="最低 -4"
+                        android:textColor="@color/grown_black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/max_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/min_temp"
+                        android:layout_centerVertical="true"
+                        android:text="最高 7"
+                        android:textColor="@color/grown_black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <com.demo.smarthome.ui.base.NotScrollListView
+                android:id="@+id/daily_forecast_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

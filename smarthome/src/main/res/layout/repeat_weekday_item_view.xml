@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/repeat_weekday"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@drawable/list_bg">
+
+        <TextView
+            android:id="@+id/weekday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周一"
+            android:textColor="@color/grown_black"
+            android:textSize="12sp"
+            android:layout_marginLeft="32dp"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/selected_signal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/ok_confirm"/>
+    </RelativeLayout>
+</RelativeLayout>

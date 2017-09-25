@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="145.6dp"
+    android:background="@null">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@null"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/temperature_led"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null">
+
+            <com.demo.smarthome.ui.base.CircleProgressView
+                android:id="@+id/temperature_progress"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                app:initValue="0"
+                app:maxValue="32"
+                app:minValue="16" />
+
+            <com.demo.smarthome.ui.base.LedCharactorView
+
+                android:id="@+id/temperature_led_value"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/led_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:text="当前温度"
+                android:textColor="@color/gray"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/humidity_led"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null">
+
+            <com.demo.smarthome.ui.base.CircleProgressView
+                android:id="@+id/humidity_progress"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                app:initValue="50"
+                app:maxValue="100"
+                app:minValue="0" />
+
+            <com.demo.smarthome.ui.base.LedCharactorView
+                android:id="@+id/humidity_led_value"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/led_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:text="当前湿度"
+                android:textColor="@color/gray"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/airquality_led"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null">
+
+            <com.demo.smarthome.ui.base.CircleProgressView
+                android:id="@+id/airquality_progress"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                app:initValue="50"
+                app:maxValue="500"
+                app:minValue="0" />
+
+            <com.demo.smarthome.ui.base.LedCharactorView
+                android:id="@+id/airquality_led_value"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/led_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:text="当前PM2.5"
+                android:textColor="@color/gray"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

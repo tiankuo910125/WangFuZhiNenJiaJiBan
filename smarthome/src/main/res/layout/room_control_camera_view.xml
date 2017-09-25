@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/room_camera_frame"
+        android:layout_width="match_parent"
+        android:layout_height="268dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22.5dp"
+                android:layout_marginBottom="22.5dp"
+                android:background="@drawable/room_control_divider"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="室内影像"
+                android:textSize="14sp"
+                android:textColor="@color/grown_black"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="282dp"
+            android:layout_height="223dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/camera_container_bg">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:background="@drawable/camera_bg"/>
+
+            <SurfaceView
+                android:id="@+id/camera_screen_surface"
+                android:layout_width="268dp"
+                android:layout_height="151dp"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/room_environment_desk_bg"/>
+
+            <com.demo.smarthome.ui.base.CircularProgress
+                android:id="@+id/loading"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="83dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="83dp"
+                android:text="@string/wh_hm_camera_offline"
+                android:textColor="@android:color/white"
+                android:textSize="21sp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/camera_onoff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/camera_screen_surface"
+                android:layout_marginTop="8.5dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/camera_onoff_btn"
+                android:button="@null"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

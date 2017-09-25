@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+    dexOptions {
+        javaMaxHeapSize "4g"
+        incremental true
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    defaultConfig {
+        applicationId "com.demo.smarthome"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 11
+        versionName "1.2.3-alpha"
+        multiDexEnabled true
+
+        ndk {
+            abiFilter("armeabi-v7a")
+            //重点是这句，
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    productFlavors {
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            output.outputFile = new File(
+                    output.outputFile.parent,
+                    output.outputFile.name.replace(output.outputFile.name,"yuezhuang_home"+versionName+".apk"))
+        }
+    }
+
+}
+
+dependencies {
+    //    compile 'com.github.nicolasjafelle:paginglistview:1.2'
+    //    compile 'com.github.jdsjlzx:LRecyclerView:1.3.7'
+    //    compile 'com.jcodecraeer:xrecyclerview:1.3.2'
+    //    compile 'com.sch.rfview:AnimRefreshRecyclerView:1.0.1'
+    //    compile project(':hellocharts-library')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //    compile 'com.squareup.okhttp3:okhttp:3.5.0'
+    compile files('libs/jcore-android_v1.1.0.jar')
+    compile files('libs/jpush-android_v3.0.1.jar')
+    //    compile files('libs/universal-image-loader-1.9.5.jar')
+    //compile 'com.hikvision.ezviz:ezuikit:1.1.0'
+    compile files('libs/EZOpenSDK_V4.5.1.20170721.jar')
+    compile files('libs/EZUIKit_1.2.jar')
+
+    /**友盟统计*/
+    compile project(':gizwitopenapi')
+    compile 'me.iwf.photopicker:PhotoPicker:0.9.5@aar'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.github.devlight.navigationtabstrip:navigationtabstrip:1.0.4'
+    compile 'com.facebook.fresco:imagepipeline-okhttp3:0.12.0'
+    compile 'com.facebook.fresco:fresco:0.12.0'
+    compile 'de.greenrobot:eventbus:3.0.0-beta1'
+    compile 'com.kaopiz:kprogresshud:1.0.5'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.umeng.analytics:analytics:6.1.2'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+}

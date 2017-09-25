@@ -1,0 +1,75 @@
+<resources>
+    <!--EnvironmentDeskTopView !-->
+    <dimen name="environment_desktop_view_height">298.3dp</dimen>
+    <dimen name="environment_desktop_view_width">371.5dp</dimen>
+    <dimen name="environment_desktop_margin">3.43dp</dimen>
+    <dimen name="environment_desktop_top_city_weather_view_height">50.3dp</dimen>
+    <dimen name="environment_desktop_top_city_name_text_left_margin">16dp</dimen>
+    <dimen name="environment_desktop_top_city_name_text_size">18.3sp</dimen>
+    <dimen name="environment_desktop_top_city_weather_pic_width">25.15dp</dimen>
+    <dimen name="environment_desktop_top_city_weather_pic_height">28.6dp</dimen>
+    <dimen name="environment_desktop_top_city_weather_pic_left_margin">25.15dp</dimen>
+    <dimen name="environment_desktop_top_city_weather_text_size">20.6sp</dimen>
+    <dimen name="environment_desktop_top_city_weather_text_left_margin">4.6dp</dimen>
+    <dimen name="environment_desktop_top_city_humidity_pic_width">14.3dp</dimen>
+    <dimen name="environment_desktop_top_city_humidity_pic_height">16dp</dimen>
+    <dimen name="environment_desktop_top_city_humidity_pic_left_margin">24dp</dimen>
+    <dimen name="environment_desktop_top_city_humidity_text_left_margin">4.6dp</dimen>
+    <dimen name="environment_desktop_top_city_air_quality_text_left_margin">28.6dp</dimen>
+    <dimen name="environment_desktop_top_city_air_quality_text_width">84.6dp</dimen>
+    <dimen name="environment_desktop_top_city_air_quality_text_height">21.7dp</dimen>
+    <dimen name="environment_desktop_top_city_air_quality_text_size">18.3sp</dimen>
+    <dimen name="environment_desktop_top_city_pm25_text_size">20.6sp</dimen>
+    <dimen name="environment_desktop_top_city_pm25_left_margin">4.6dp</dimen>
+    <dimen name="environment_desktop_top_room_height">197.7dp</dimen>
+    <dimen name="environment_desktop_top_room_name_text_size">18.3sp</dimen>
+    <dimen name="environment_desktop_top_room_name_top_margin">34.3dp</dimen>
+    <dimen name="environment_desktop_top_room_name_bottom_margin">12.6dp</dimen>
+    <dimen name="environment_desktop_top_room_temp_img_width">14.6dp</dimen>
+    <dimen name="environment_desktop_top_room_temp_img_height">14.6dp</dimen>
+    <dimen name="environment_desktop_top_room_temp_left_margin">6.86dp</dimen>
+    <dimen name="environment_desktop_top_room_hum_img_width">11.4dp</dimen>
+    <dimen name="environment_desktop_top_room_hum_img_height">14.6dp</dimen>
+    <dimen name="environment_desktop_top_room_stat_text_size">68.6sp</dimen>
+    <dimen name="environment_desktop_top_room_symbol_text_size">12.6sp</dimen>
+    <dimen name="environment_desktop_top_room_pm25_text_size">17.15sp</dimen>
+    <dimen name="environment_desktop_top_room_pm25_top_margin">34.3dp</dimen>
+    <dimen name="environment_desktop_top_room_pm25_symbol_left_margin">22.9dp</dimen>
+
+    <!-- LightingDeskTop !-->
+    <dimen name="lighting_desktop_view_height">226.3dp</dimen>
+    <dimen name="lighting_desktop_view_width">179.5dp</dimen>
+    <dimen name="lighting_desktop_room_name_top_margin">18.3dp</dimen>
+    <dimen name="lighting_desktop_text_size">20.6sp</dimen>
+    <dimen name="lighting_desktop_btn_height">34.3dp</dimen>
+    <dimen name="lighting_desktop_btn_width">118.9dp</dimen>
+    <dimen name="lighting_desktop_btn_v_spacing">32dp</dimen>
+    <dimen name="lighting_desktop_btn_pic_width">19.4dp</dimen>
+    <dimen name="lighting_desktop_btn_pic_height">24dp</dimen>
+    <dimen name="lighting_desktop_btn_pic_left_margin">18.3dp</dimen>
+    <dimen name="lighting_desktop_btn_text_left_margin">12.6dp</dimen>
+    <dimen name="lighting_desktop_room_switch_height">50.3dp</dimen>
+
+    <!-- SecurityDeskTop !-->
+    <dimen name="security_desktop_view_height">303.5dp</dimen>
+    <dimen name="security_desktop_view_width">184dp</dimen>
+    <dimen name="security_desktop_btn_top_margin">68.6dp</dimen>
+    <dimen name="security_desktop_text_size">20.6sp</dimen>
+    <dimen name="security_desktop_btn_height">34.3dp</dimen>
+    <dimen name="security_desktop_btn_width">118.9dp</dimen>
+    <dimen name="security_desktop_btn_v_spacing">29.7dp</dimen>
+    <dimen name="security_desktop_btn_text_left_margin">12.6dp</dimen>
+    <dimen name="security_desktop_btn_pic_left_margin">18.3dp</dimen>
+    <dimen name="security_desktop_stat_top_margin">35.4dp</dimen>
+    <dimen name="security_desktop_stat_text_size">13.7sp</dimen>
+
+    <!-- EnergyDeskTop !-->
+    <dimen name="energy_desktop_view_height">69.7dp</dimen>
+    <dimen name="energy_desktop_view_width">179.5dp</dimen>
+    <dimen name="energy_desktop_text_left_margin">62.9dp</dimen>
+    <dimen name="energy_desktop_text_top_margin">22.9dp</dimen>
+    <dimen name="energy_desktop_text_size">27.4dp</dimen>
+
+    <dimen name="line_hight">0.5dp</dimen>
+
+</resources>
